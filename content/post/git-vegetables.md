@@ -3,7 +3,7 @@ title: "How a garden in your git patch improves readability"
 date: 2020-02-29T14:01:20-06:00
 draft: false
 author: "Landon Bouma"
-cover: "img/git-veggie-patch-garden.png"
+cover: "assets/post/git-veggie-patch/colorful-garden.png"
 description: "Do you sometimes struggle to find the start of a hunk when using `git add -p`?
 Add a colorful vegetable garden between interactions, to make patch hunks easier to spot."
 ---
@@ -26,7 +26,7 @@ Or, more creatively, we can plant a colorful garden between interactions.
 
 Here's an animation to show how it works, before and after making the change:
 
-{{< image src="/assets/post-git-veggie-patch-how-it-works.gif" alt="How it works" position="left" style="border-radius: 8px; margin: 2em 0em; padding: 4px; border: 2px solid white;" >}}
+{{< image src="/assets/post/git-veggie-patch/how-it-works.gif" alt="How it works" position="left" style="border-radius: 8px; margin: 2em 0em; padding: 4px; border: 2px solid white;" >}}
 
 -------
 
