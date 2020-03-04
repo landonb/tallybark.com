@@ -9,11 +9,14 @@ command = "hugo --gc --minify"
 [context.deploy-preview]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
-#[context.deploy-preview.environment]
-#HUGO_VERSION = "0.66"
+# Note: You can also set `HUGO_VERSION` via the console:
+#   https://app.netlify.com/sites/foo-bar-baz/settings/deploys#environment
+# but the value(s) here take precedence.
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.66.0"
 
-#[context.production.environment]
-#HUGO_VERSION = "0.66"
+[context.production.environment]
+HUGO_VERSION = "0.66.0"
 # HUGO_ENV = "production"
 # HUGO_ENABLEGITINFO = "true"
 
