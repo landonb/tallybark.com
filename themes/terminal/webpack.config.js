@@ -20,6 +20,7 @@ module.exports = {
       join("source", "js", "languageSelector.js")
     ],
     "prism.js": join("source", "js", "prism.js"),
+    "prism.css": join("source", "css", "prism.css"),
     "style.css": join("source", "css", "style.css"),
     "red.css": join("source", "css", "color", "red.css"),
     "blue.css": join("source", "css", "color", "blue.css"),
