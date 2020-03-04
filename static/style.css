@@ -1,0 +1,68 @@
+body {
+  background-color: #050505 !important;
+}
+
+:root {
+  --accent: #198CCF;
+  --byline: #CDC880;
+}
+
+.header__logo:after {
+  content: '';
+  background: repeating-linear-gradient(180deg, var(--accent), var(--accent) 9px, transparent 0, transparent 18px);
+  width: 90%;
+}
+
+.header__logo:before {
+  content: '';
+  background: repeating-linear-gradient(180deg, var(--accent), var(--accent) 9px, transparent 0, transparent 18px);
+  width: 90%;
+}
+
+.logo {
+  padding: 14px 21px 7px 21px;
+}
+
+.logo::before {
+  /* I don't have a pro account, so I'd expect this to instead be:
+      font-family: 'Font Awesome 5 Free';
+     but 'Pro' is what works for me. Odd. */
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  content: '\f120';
+  padding-right: 0.4em;
+  font-size: 0.9em;
+}
+
+.menu__inner {
+  color: var(--byline);
+}
+
+.post-meta {
+  color: var(--byline);
+}
+
+.post:first-child {
+  margin-top: 0px;
+}
+
+.post:first-child h1.post-title {
+  margin-top: 0px;
+}
+
+/* Tweak the Prism. */
+
+div.code-toolbar {
+  padding-top: 0;
+  padding-bottom: 7px;
+  margin-top: 29px;
+}
+
+code[class*="language-"] {
+	box-shadow: none;
+}
+
+pre[class*="language-"] {
+  border: 1px solid hsla(0,0%,100%,.1);
+}
+
