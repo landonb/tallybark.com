@@ -23,6 +23,8 @@ googleAnalytics = "UA-159689911-1"
   # - `true` by default.
   #  oneHeadingSize = false
 
+  siteSourceURL = "https://github.com/landonb/tallybark.com"
+
 [languages]
   [languages.en]
     languageName = "English"

@@ -7,7 +7,9 @@
       <div class="copyright">
         <span>© {{ now.Year }}. All rights reserved.</span>
     {{end}}
-        <span>[<a href="https://github.com/landonb/promulgate">source</a>]</span>
+    {{ if $.Site.Params.SiteSourceURL }}
+        <span>[<a href="{{ $.Site.Params.SiteSourceURL }}">source</a>]</span>
+    {{end}}
       </div>
   </div>
 </footer>
