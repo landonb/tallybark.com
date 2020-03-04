@@ -5,7 +5,11 @@
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="{{ .Permalink }}" />
 
-{{ template "_internal/google_analytics.html" . }}
+<!--
+  // All our visitors are on modern brows, eh.
+  {{ template "_internal/google_analytics.html" . }}
+-->
+{{ template "_internal/google_analytics_async.html" . }}
 
 <!-- Theme CSS -->
 <link rel="stylesheet" href="{{ "assets/style.css" | absURL }}">
