@@ -1,0 +1,19 @@
+# https://gohugo.io/hosting-and-deployment/hosting-on-netlify/
+
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+# Ref:
+#   https://docs.netlify.com/configure-builds/environment-variables/#deploy-urls-and-metadata
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.66"
+
+[context.production.environment]
+HUGO_VERSION = "0.66"
+# HUGO_ENV = "production"
+# HUGO_ENABLEGITINFO = "true"
+
