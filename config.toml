@@ -1,35 +1,46 @@
-baseurl = "https://example.com/"
+baseurl = "https://tallybark.com/"
 languageCode = "en-us"
-theme = "hugo-theme-terminal"
+theme = "terminal"
 paginate = 5
 
 [params]
+  # Subdir of blog content/ (default is "posts", i.e., `content/posts/`).
   contentTypeName = "post"
+  # Choices: ["orange", "blue", "red", "green", "pink"].
   themeColor = "orange"
+  # If set to 0, only submenu trigger will be visible.
   showMenuItems = 2
+  # Show selector to switch language.
+  showLanguageSelector = false
+  # Set theme to full screen width.
   fullWidthTheme = false
-  centerTheme = false
+  # Center theme with default width.
+  centerTheme = true
+  # Set a custom favicon (default is a `themeColor` square).
+  favicon = "favicon.ico"
+  # Set all headings to their default size (depending on browser settings).
+  # - `true` by default.
+  #  oneHeadingSize = false
 
 [languages]
   [languages.en]
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
+    languageName = "English"
+    title = "Tally Bark"
+    subtitle = ""
     keywords = ""
-    copyright = ""
+    copyright = "Landon Bouma. All rights reserved."
+    copyyears = "2020"
     menuMore = "Show more"
     readMore = "Read more"
-    readOtherPosts = "Read other posts"
+    readOtherPosts = "Read other articles"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "Tally Bark"
       logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "articles"
+        name = "Articles"
+        url = "/"
+
