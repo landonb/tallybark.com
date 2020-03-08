@@ -3,6 +3,7 @@ languageCode = "en-us"
 theme = "terminal"
 paginate = 5
 googleAnalytics = "UA-159689911-1"
+enableRobotsTXT = true
 
 [params]
   # Subdir of blog content/ (default is "posts", i.e., `content/posts/`).
